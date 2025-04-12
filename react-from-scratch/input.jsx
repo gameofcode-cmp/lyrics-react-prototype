@@ -17,6 +17,13 @@ export default function App() {
                     <button type="submit">Submit</button>
                 </form>
             </div>
+            <div>
+                <Greeting>Hi there</Greeting>
+            </div>
         </>
     )
+}
+
+function Greeting ({children}) {
+    return <h2 className='greeting'>{children}</h2>
 }
