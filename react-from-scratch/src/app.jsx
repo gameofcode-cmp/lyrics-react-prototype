@@ -1,4 +1,6 @@
-export default function App() {
+import ReactDOM from 'react-dom/client'
+
+function App() {
     return(
         <>
             <div>
@@ -27,3 +29,8 @@ export default function App() {
 function Greeting ({children}) {
     return <h2 className='greeting'>{children}</h2>
 }
+
+const app = document.getElementById('app')
+const root = ReactDOM.createRoot(app)
+
+root.render(<App />)
